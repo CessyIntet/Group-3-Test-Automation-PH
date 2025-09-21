@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "info-test": "npx playwright test tests/info.spec.ts --project chromium"
+    "info-test": "npx playwright test tests/info.spec.ts --project chromium",
+    "info-ui": "npx playwright test tests/info.spec.ts --ui"
 
 
   },
