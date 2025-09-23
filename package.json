@@ -6,8 +6,6 @@
   "scripts": {
     "info-test": "npx playwright test tests/info.spec.ts --project chromium",
     "info-ui": "npx playwright test tests/info.spec.ts --ui"
-
-
   },
   "repository": {
     "type": "git",
@@ -24,8 +22,8 @@
     "@estruyf/github-actions-reporter": "^1.10.0",
     "@faker-js/faker": "^9.5.0",
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.5.2",
     "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.5.2",
     "chrome-launcher": "^1.2.0",
     "dotenv": "^16.6.1",
     "js-yaml": "^4.1.0",
