@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { runLighthouseWithCustomConfig } from '@shared/lighthouse-helper';
+import { runLighthouseWithCustomConfig } from '../shared/lighthouse-helper';
 import fs from 'fs';
 
 test('Custom Lighthouse audit from config', async ({}, testInfo) => {
