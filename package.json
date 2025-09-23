@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "info-test": "npx playwright test tests/info.spec.ts --project chromium",
-    "info-ui": "npx playwright test tests/info.spec.ts --ui"
+    "aboutus-test": "npx playwright test tests/aboutus.spec.ts --project chromium",
+    "aboutus-ui": "npx playwright test tests/aboutus.spec.ts --ui",
+    "contactus-test": "npx playwright test tests/contactus.spec.ts --project chromium",
+    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui"
+
 
 
   },

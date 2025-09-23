@@ -1,8 +1,7 @@
-//tests for About Us Page
+ // ---------------- About Us Page Tests ----------------
 
-import { test, expect } from '../shared/base';
+import { test, expect } from '../shared/base.ts';
 import { attachScreenshot } from '../shared/helpers.ts';
-// import users from '../../test-data/users.json';
 
 // Screenshot file names
 const ABOUTUS_SCREENSHOT = 'aboutus-screenshot.png';
@@ -11,6 +10,7 @@ const ABOUTUS_HOMEPAGE_SCREENSHOT = 'aboutus-homepage-screenshot.png';
 const ABOUTUS_SERVICES_SCREENSHOT = 'aboutus-services-screenshot.png';
 const ABOUTUS_TESTIMONIALS_SCREENSHOT = 'aboutus-testi-screenshot.png';
 const ABOUTUS_BLOG_SCREENSHOT = 'aboutus-blog-screenshot.png';
+
 
 
 test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests', "@Happy-Path"] }, () => {
@@ -52,7 +52,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
         });
 
         await test.step('Verify if Services link is visible', async () => {
-          await expect(page.getByRole('navigation').getByRole('link', { name: 'Services' })).toBeVisible();
+          await expect(page.getByRole('button', { name: 'Services' })).toBeVisible();
         });
 
         await test.step('Verify if Testimonials link is visible', async () => {
@@ -82,7 +82,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
       });
 
 
-      test('test area snapshot for "About Us Page"', async ({ AboutUsPage, page }) => {
+      test('Test area snapshot for "About Us Page"', async ({ AboutUsPage, page }) => {
 
         // For checking first if the page is loaded
         await test.step('Verify if Navigation Menu is visible', async () => {
@@ -107,7 +107,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
           });
       });
 
-      test('Visual testing for "About Us Page"',{tag: "@Happy-Path"}, async ({ AboutUsPage, page }, testInfo) => {
+      test('Visual testing for "About Us Page"', async ({ AboutUsPage, page }, testInfo) => {
         
         // For checking first if the page is loaded
         await test.step('Check if the About Us page has been loaded', async () => {
@@ -127,7 +127,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
 
         });
 
-      test('Check that Home link is clickable, and redirects correctly', async ({ AboutUsPage, page }, testInfo) => {
+      test('Check that Home link is clickable, and redirects correctly',{tag: "@Functional"}, async ({ AboutUsPage, page }, testInfo) => {
 
          // For checking first if the page is loaded
         await test.step('Verify if Navigation Menu is visible', async () => {
@@ -150,7 +150,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
 
       });
 
-      test('Check that Menu item - "Services" is clickable, redirects correctly', async ({ AboutUsPage, page }, testInfo) => {
+      test('Check that Menu item - "Services" is clickable, redirects correctly', {tag: "@Functional"}, async ({ AboutUsPage, page }, testInfo) => {
 
          // For checking first if the page is loaded
         await test.step('Verify if Navigation Menu is visible', async () => {
@@ -193,7 +193,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
       });
 
       
-      test('Check that Menu item - "Testimonials" is clickable and redirects correctly', async ({ AboutUsPage, page }, testInfo) => {
+      test('Check that Menu item - "Testimonials" is clickable and redirects correctly',{tag: "@Functional"},  async ({ AboutUsPage, page }, testInfo) => {
 
          // For checking first if the page is loaded
         await test.step('Verify if Navigation Menu is visible', async () => {
@@ -218,7 +218,7 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
 
       });
 
-      test('Check that Menu item - "Blog" is clickable, redirects correctly', async ({ AboutUsPage, page }, testInfo) => {
+      test('Check that Menu item - "Blog" is clickable, redirects correctly',{tag: "@Functional"},  async ({ AboutUsPage, page }, testInfo) => {
 
          // For checking first if the page is loaded
         await test.step('Verify if Navigation Menu is visible', async () => {
@@ -245,4 +245,3 @@ test.describe('About Us Page UI tests from Home Page link', { tag: [ '@UI-Tests'
       });
 
   });
-

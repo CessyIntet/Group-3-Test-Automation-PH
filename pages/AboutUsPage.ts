@@ -8,8 +8,9 @@ export class AboutUsPage {
    readonly TestingAsAServiceLink: Locator;
    readonly TestimonialsLink: Locator;
    readonly BlogLink: Locator;
-  readonly ContactUsLink: Locator;
-  readonly PracticeNowLink: Locator;
+    readonly ContactUsLink: Locator;
+    readonly PracticeNowLink: Locator;
+
   // Locators
 
     constructor(public readonly page: Page) {
@@ -42,5 +43,6 @@ export class AboutUsPage {
     await expect(this.ContactUsLink).toBeVisible();
     await expect(this.PracticeNowLink).toBeVisible();
   }
+
 
 }
