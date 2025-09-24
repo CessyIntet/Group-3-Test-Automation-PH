@@ -195,7 +195,6 @@ test.describe('"Contact Us" Page UI tests from Home Page link', { tag: [ '@UI-Te
                         await attachScreenshot(page, testInfo, CONTACTUS_FORM_SUBMITTED_SCREENSHOT);
                     });
 
-
             });
 
  });

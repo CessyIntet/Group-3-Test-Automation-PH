@@ -1,0 +1,39 @@
+# file: artillery-config.yml
+
+config:
+  target: "https://testautomationph.netlify.app"
+  phases:
+    - duration: 60         # run first phase for 1 minute
+      arrivalRate: 5       # 5 new users per second
+    - duration: 60         # second phase for 1 minute
+      arrivalRate: 20      # ramp up to 20 users per second
+    - duration: 60         # third phase
+      arrivalRate: 50      # stress load at 50 users per second
+
+  defaults:
+    headers:
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+
+scenarios:
+  - name: "Browse main pages"
+    flow:
+      - get:
+          url: "/"               # home
+      - get:
+          url: "/about_us"       # about page (adjust URL if different)
+      - get:
+          url: "/#services"       # services overview
+      - get:
+          url: "/#blog"
+
+  - name: "Contact Us form"
+    flow:
+      - get:
+          url: "/contact"     # load contact page
+      # (Optional) simulate form submission if there is a form endpoint
+      # - post:
+      #     url: "/contact-us/submit"   # endpoint for the form
+      #     json:
+      #       name: "Test User"
+      #       email: "testuser@example.com"
+      #       message: "Hello from Artillery load test"
