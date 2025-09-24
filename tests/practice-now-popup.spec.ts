@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { takeScreenshot } from '../shared/helpers';
+import { takeScreenshot } from '../shared/labs-helpers';
 
 const labs_landing_page_screenshot = '/screenshots/labs-landing-page';
 const practice_options_screenshot = '/screenshots/practice-options';

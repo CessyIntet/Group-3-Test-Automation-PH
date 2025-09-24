@@ -10,7 +10,7 @@
     "codegen": "npx playwright codegen https://testautomationph.netlify.app/",
     "practice-now": "npx playwright test tests/practice-now-popup.spec.ts --project=chromium",
     "labs-feature": "npx playwright test tests/labs-feature.spec.ts --project=chromium",
-    "lighthouse": "npx playwright test --project=chromium --reporter=html --config=lighthouse.config.ts tests/practiceNow.spec.ts"
+    "lighthouse": "npx playwright test tests/labs-performance.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,11 @@
   "homepage": "https://github.com/CessyIntet/Group-3-Test-Automation-PH#readme",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.5.2"
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.5.2",
+    "js-yaml": "^4.1.0"
+  },
+  "dependencies": {
+    "lighthouse": "^12.8.2"
   }
 }

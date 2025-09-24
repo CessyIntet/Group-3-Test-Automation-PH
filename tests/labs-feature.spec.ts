@@ -1,4 +1,4 @@
-import { test, expect } from '../shared/base';
+import { test, expect } from '../shared/labs-base';
 
 test.describe('Sidebar Functionality', () => {
 
