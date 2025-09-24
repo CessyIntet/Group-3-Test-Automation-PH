@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { HomeSection } from '../pages/homeSection';
 import { ServicesSection } from '../pages/servicesSection';
 import { TestiSection } from '../pages/testimonialsSection';
-import { BlogSection } from '../pages/blogSection.ts';
+import { BlogSection } from '../pages/blogSection';
 
 // Test for HomeSection
 test('Validate that Home Section elements are visible', async ({ page }) => {
@@ -89,11 +89,51 @@ test('Validate that Blog Section elements are visible', async ({ page }) => {
   await expect(blog.txtB2Auth).toBeVisible();
 
   // Blog 3
-  await expect(blog.txtB3Ddate).toBeVisible();
+  await expect(blog.txtB3Date).toBeVisible(); // fixed typo
   await expect(blog.txtB3ReadTime).toBeVisible();
   await expect(blog.hdgB3).toBeVisible();
   await expect(blog.txtB3).toBeVisible();
   await expect(blog.txtB3Auth).toBeVisible();
 
   await expect(blog.buttonAllArticles).toBeVisible();
+});
+
+// Navigation tests for BlogSection
+test.describe('Validate that featured blogs lead to full-text when clicked', () => {
+  let blog: BlogSection;
+
+  test.beforeEach(async ({ page }) => {
+    blog = new BlogSection(page);
+    await blog.navigateToBlog();
+  });
+
+  test.skip('Blog 1 Navigation', async ({ page }, testInfo) => {
+    testInfo.annotations.push({
+      type: 'issue',
+      description: 'hyperlinks dont lead to full blog text',
+    });
+
+    await blog.hdgB1.click();
+    await expect(page).toHaveURL(/.*\/blog\/.*/);
+  });
+
+  test.skip('Blog 2 Navigation', async ({ page }, testInfo) => {
+    testInfo.annotations.push({
+      type: 'issue',
+      description: 'hyperlinks dont lead to full blog text',
+    });
+
+    await blog.hdgB2.click();
+    await expect(page).toHaveURL(/.*\/blog\/.*/);
+  });
+
+  test.skip('Blog 3 Navigation', async ({ page }, testInfo) => {
+    testInfo.annotations.push({
+      type: 'issue',
+      description: 'hyperlinks dont lead to full blog text',
+    });
+
+    await blog.hdgB3.click();
+    await expect(page).toHaveURL(/.*\/blog\/.*/);
+  });
 });

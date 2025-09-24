@@ -20,7 +20,7 @@ export class BlogSection {
   public readonly txtB2: Locator;
   public readonly txtB2Auth: Locator;
   
-  public readonly txtB3Ddate: Locator;
+  public readonly txtB3Date: Locator;
   public readonly txtB3ReadTime: Locator;
   public readonly hdgB3: Locator;
   public readonly txtB3: Locator;
@@ -47,7 +47,7 @@ constructor(page: Page) {
   this.txtB2 = page.getByText('Master API test automation')
   this.txtB2Auth = page.getByText('👤 By Jane Cross')
   
-  this.txtB3Ddate = page.getByText('📅 May 15,')
+  this.txtB3Date = page.getByText('📅 May 15,')
   this.txtB3ReadTime = page.getByText('• 10 min read')
   this.hdgB3 = page.getByRole('heading', { name: 'Building Robust Test' })
   this.txtB3 = page.getByText('Discover how to structure')
