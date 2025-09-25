@@ -7,7 +7,9 @@
     "aboutus-test": "npx playwright test tests/aboutus.spec.ts --project chromium",
     "aboutus-ui": "npx playwright test tests/aboutus.spec.ts --ui",
     "contactus-test": "npx playwright test tests/contactus.spec.ts --project chromium",
-    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui"
+    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui",
+    "footer-test": "npx playwright test tests/footer.spec.ts --project chromium",
+    "footer-ui": "npx playwright test tests/footer.spec.ts --ui"
 
 
 
