@@ -7,9 +7,7 @@
     "aboutus-test": "npx playwright test tests/aboutus.spec.ts --project chromium",
     "aboutus-ui": "npx playwright test tests/aboutus.spec.ts --ui",
     "contactus-test": "npx playwright test tests/contactus.spec.ts --project chromium",
-    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui",
-    "footer-test": "npx playwright test tests/footer.spec.ts --project chromium",
-    "footer-ui": "npx playwright test tests/footer.spec.ts --ui"
+    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui"
 
 
 
@@ -28,9 +26,9 @@
   "devDependencies": {
     "@estruyf/github-actions-reporter": "^1.10.0",
     "@faker-js/faker": "^9.5.0",
-    "@playwright/test": "^1.55.0",
-    "@types/node": "^24.5.2",
+    "@playwright/test": "^1.55.1",
     "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.5.2",
     "chrome-launcher": "^1.2.0",
     "dotenv": "^16.6.1",
     "js-yaml": "^4.1.0",

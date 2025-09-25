@@ -89,7 +89,7 @@ test('Validate that Blog Section elements are visible', async ({ page }) => {
   await expect(blog.txtB2Auth).toBeVisible();
 
   // Blog 3
-  await expect(blog.txtB3Ddate).toBeVisible();
+  await expect(blog.txtB3Date).toBeVisible();
   await expect(blog.txtB3ReadTime).toBeVisible();
   await expect(blog.hdgB3).toBeVisible();
   await expect(blog.txtB3).toBeVisible();

@@ -1,12 +1,9 @@
 name: Playwright Tests
-on: workflow_dispatch
-#on:
-#  push:
-#    branches: [ main, master ]
-#  pull_request:
-#    branches: [ main, master ]
-#  schedule:
-#    - cron: '0 16 * * 3' # every Wednesday at 16:00 UTC - PH TIME Thursday 12:00 AM
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
 jobs:
   test:
     timeout-minutes: 60
