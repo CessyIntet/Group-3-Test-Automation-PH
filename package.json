@@ -7,7 +7,51 @@
     "aboutus-test": "npx playwright test tests/aboutus.spec.ts --project chromium",
     "aboutus-ui": "npx playwright test tests/aboutus.spec.ts --ui",
     "contactus-test": "npx playwright test tests/contactus.spec.ts --project chromium",
-    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui"
+    "contactus-ui": "npx playwright test tests/contactus.spec.ts --ui",
+    "codegen": "npx playwright codegen https://testautomationph.netlify.app/",
+    "practice-now": "npx playwright test tests/practice-now-popup.spec.ts --project=chromium",
+    "labs-feature": "npx playwright test tests/labs-feature.spec.ts --project=chromium",
+    "lighthouse": "npx playwright test tests/labs-performance.spec.ts",
+    "labs-basic": "npx playwright test tests/labs-basicInteraction.spec.ts --project=chromium",
+    "labs-data": "npx playwright test tests/labs-dataHandling.spec.ts --project=chromium",
+    "labs-ui": "npx playwright test tests/labs-UIElements.spec.ts --project=chromium",
+    "labs-advanced": "npx playwright test tests/labs-advancedFeatures.spec.ts --project=chromium",
+    "labs-api": "npx playwright test tests/labs-api.spec.ts",
+    "footer-test": "npx playwright test tests/footer.spec.ts --project chromium",
+    "footer-ui": "npx playwright test tests/aboutus.spec.ts --ui",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
