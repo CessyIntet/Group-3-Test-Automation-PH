@@ -18,7 +18,7 @@
     "labs-advanced": "npx playwright test tests/labs-advancedFeatures.spec.ts --project=chromium",
     "labs-api": "npx playwright test tests/labs-api.spec.ts",
     "footer-test": "npx playwright test tests/footer.spec.ts --project chromium",
-    "footer-ui": "npx playwright test tests/aboutus.spec.ts --ui",
+    "footer-ui": "npx playwright test tests/aboutus.spec.ts --ui"
 
 
 
