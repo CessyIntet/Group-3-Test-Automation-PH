@@ -9,7 +9,7 @@ The suite of resources shall include video lectures on test automation, a reposi
 
 Moreover, Test Automation PH aims to advance the profession of software testing and automation in the Philippines.
 
-Test Automation PH is founded by ####regie2197.
+Test Automation PH is founded by **regie2197.
 
 
 ## 📦 About this Repository
@@ -199,24 +199,24 @@ Tests:
 Features tested: Pokémon API, Todo API, API performance, data validation, error handling
 Helpers used: Playwright’s `request` fixture
 
-  Pokémon API
+  *Pokémon API
     1. Fetch single Pokémon (Bulbasaur)
     2. Fetch paginated Pokémon list
     3. Handle invalid Pokémon ID
     4. Fetch Pokémon types
-  Todo API
+  *Todo API
     5. Create a new todo item
     6. Fetch all todos
     7. Update a todo item
     8. Delete a todo item
     9. Handle invalid todo ID
-  Performance
+  *Performance
     10. Validate API responds within time limits
     11. Handle concurrent requests
-  Data Validation
+  *Data Validation
     12. Validate user data structure
     13. Validate post + comments structure
-  Error Handling
+  *Error Handling
     14. Handle malformed requests
     15. Handle network timeouts gracefully
     16. Reliable timeout test with delayed endpoint
